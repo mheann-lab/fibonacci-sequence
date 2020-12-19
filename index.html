@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<head>
+<title> fibonacci.html </title>
+</head>
+<body style="background-image: url(wp4394923-1.jpg)"> 
+<h3 style="text-align:center; color:aquamarine"> Fibonacci Sequence </h3>
+<script type="text/javascript">
+
+var limit = prompt("Enter the limit 'n' to generate the fibonacci series:", " ");
+var a=0;
+var b=1;
+
+document.write("The limit entered to generate the fibonacci series is: ",limit, "<br/>");
+document.write("The fibonacci series : ");
+document.write("",a," ");
+document.write("",b," ");
+ 
+var i,c;
+for(i=2; i<limit; i++)
+{
+	 c=a+b;
+	 document.write("",c," ");
+	 a=b;
+	 b=c;
+}
+
+</script>
+</body>
+</html>
